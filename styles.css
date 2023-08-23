@@ -1,0 +1,369 @@
+body {
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/college.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+img {
+    width: 160px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.menu {
+    flex: 1;
+    text-align: right;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 4px 5px;
+    position: relative;
+    line-height: 10px;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.menu ul li::after {
+    content: '';
+    background: #00809D;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu ul li:hover::after {
+    width: 100%;
+
+}
+
+.tag {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tag h1 {
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
+.tag p {
+    font-size: 16px;
+    margin: 10px 0 40px;
+}
+
+.btn {
+    background-color: #00809D;
+    color: white;
+    padding: 6px 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* border-radius: 3px; */
+    font-size: 15px;
+    box-shadow: 2px 1px 20px black;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+
+.course {
+    background-image: url("img/shapelined-_JBKdviweXI-unsplash.jpg");
+    width: 100vh;
+    background-size: cover;
+    background-color: #00809d24;
+    padding-top: 40px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.course ul {
+    height: 250px;
+    color: rgb(26, 26, 25);
+    margin-left: 45%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 16px;
+    text-align: start;
+    line-height: 35px;
+}
+
+/* .course ul li:hover{
+    font-weight: 500;
+    padding-left: 5px;
+    cursor: pointer;
+    background-color: #00809D;
+    color: azure;
+} */
+
+.course h1,
+.branches h1,
+.facility h1,
+.rev h1 {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 500px;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* branches */
+
+.branches {
+    /* background-color: rgb(184, 184, 184); */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.city {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.campus-col {
+    /* flex-basis: 32%; */
+    /* border-radius: 8px; */
+    margin-bottom: 30px;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.campus-col img {
+    width: 260px;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    width: 260px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(0, 125, 163, 0.7);
+}
+
+.layer h3 {
+    font-weight: 200;
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.layer:hover h3 {
+    opacity: 1;
+    bottom: 47%;
+    transition: 0.5s;
+}
+
+.text {
+    text-align: justify;
+}
+
+.facility {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 40px 0;
+}
+
+.facility .fac .c .r img {
+    width: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.facility .fac .c .r img:hover {
+    border: 2px solid #00809D;
+    box-shadow: none;
+}
+
+.facility p {
+    font-size: 20px;
+}
+
+.facility {
+    width: 80%;
+    margin: auto;
+}
+
+.c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+footer {
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 30px 0;
+    background-color: #00809D;
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+footer h2,footer .w p {
+    color: rgb(255, 183, 0);
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+footer img {
+    border-radius: 10px;
+    width: 200px;
+}
+
+footer ul li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.fa-brands {
+    background-color: #00809D;
+    font-size: 20px;
+}
+.rev .review{
+    /* background-color:#00303b; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rev{
+    margin-top: 20px;
+    background-color: #001a20;
+    padding-bottom: 20px;
+    /* color: aliceblue; */
+}
+.rev h1{
+    color: aliceblue;
+}
+.rev1 {
+    display: flex;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.rev1 img {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+@media(max-width:700px) {
+    .tag h1 {
+        font-weight: 600;
+        font-size: 25px;
+        text-transform: capitalize;
+        align-items: center;
+    }
+
+    .menu .ul {
+        display: none;
+    }
+
+    nav .fa-solid {
+        list-style: none;
+        display: inline-block;
+        padding: 4px 4px;
+        position: relative;
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .course ul {
+        color: rgb(26, 26, 25);
+        margin-left: 20%;
+        padding: 10px 0;
+        /* box-sizing: border-box; */
+        list-style: none;
+        font-size: 16px;
+        /* text-align: start;      */
+        /* width: 300px; */
+    }
+
+    .city,
+    .c {
+        flex-direction: column;
+    }
+
+    .c .r {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fot2 {
+        flex-direction: row;
+    }
+    .rev .review{
+        flex-direction: column;
+    }
+    .rev1{
+        width: 25rem;
+    }
+}
